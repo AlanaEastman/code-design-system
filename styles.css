@@ -1,0 +1,868 @@
+/****
+Root
+*****/
+
+:root {
+    --main-green: #3BD09C;
+    --Darker-green: #4AA786;
+    --lighter-green: #7FEAC4;
+    --light-grey: #F2F1F1;
+    --darker-grey:#9E9E9E;
+    --dark-color: #000000;  
+    --white-color: #ffffff;
+}
+
+/*******************************************************************************************
+You can change the color by changing the Hex-code. The color change will aply to every page
+*******************************************************************************************/
+
+body {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    margin: 20px;
+}
+
+/***********************************************************************************************8********************
+This can all be changed. This is very basic so everyone can use it, but you can change it to any font that you like
+********************************************************************************************************************/
+
+
+
+/*********************************************************************************************************
+Genaral code. You can change the color by changing the Hex-code. The color change will aply to every page
+*********************************************************************************************************/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+h3 { 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    max-width: 60%;
+}
+
+
+
+
+a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--main-green);
+}
+
+a:active {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Darker-green);
+}
+
+a:visited {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************
+General code for "Navigation". Applies to all Navigations.
+****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul{  
+  padding: 1em;
+  background: var(--light-grey);
+  border: 2px solid var(--darker-grey);
+  width: fit-content;
+  display:flex;
+  list-style: none;
+  border-radius: 1em
+}
+
+nav li{  
+  width:fit-content;
+  border-radius: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+nav li + li {
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-radius: 0;
+  border-color: var(--main-green);
+  padding: 0;
+}
+
+nav a {  
+  max-height: 1em;
+  padding: 1em;
+  margin: 0;
+  text-decoration: none;
+  color: var(--main-green);
+  font-weight: bold;
+  width: 100%;
+}
+
+nav a:hover {
+  transition: 0.4s;
+  background: var(--main-green);
+  color: var(--white-color);
+}
+
+nav a:visited {
+  color: var(--main-green);
+}
+
+nav a:hover:visited {
+  color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************
+General code for "Button". Applies to all primary buttons.
+***************************************************/
+button {
+    width: 10em;
+    height: 3em;
+    margin: 1.25em 0;
+    border-radius: 1em;
+    text-decoration: none;
+    background: var(--main-green);
+    border-style: none;
+    margin-top: 0;
+    
+}
+button a { 
+    width: 4.5em;
+    height: 1em;
+    text-decoration: none;
+    color: var(--white-color)
+    
+}
+
+button:hover {
+  text-decoration: none;
+  background: var(--Darker-green);
+  border-style: none;
+  margin-top: 0;
+  transition: 0.4s;
+}
+
+button a:hover {
+  text-decoration: none;
+    font-style: italic;
+    color: var(--white-color)
+}
+
+button:active {
+  text-decoration: none;
+    background: var(--main-green);
+    border: 4px solid var(--lighter-green);
+    margin-top: 0;
+}
+
+button a:active {
+  text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+/******************************
+Code that only aplies to the 
+primary button disabled
+*******************************/
+
+.primary-disabled {
+    text-decoration: none;
+    background: var(--main-green);
+    border-style: none;
+    margin-top: 0;
+    opacity: 40%;
+    cursor: not-allowed;
+}
+
+.primary-disabled a {
+    text-decoration: none;
+    color: var(--white-color);
+    cursor: not-allowed;
+}
+
+.primary-disabled:hover {
+    text-decoration: none;
+    background: var(--main-green);
+    border-style: none;
+    margin-top: 0;
+    opacity: 40%;
+    cursor: not-allowed;
+}
+
+.primary-disabled a:hover {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--white-color);
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+/******************************
+Code that only aplies to the 
+Secondary button default
+*******************************/
+
+.secondary-default {
+    text-decoration: none;
+    background: var(--white-color);
+    border-style: solid;
+    border-color: var(--main-green);
+}
+
+.secondary-default a {
+    text-decoration: none;
+    color: var(--dark-color)
+}
+
+.secondary-default:hover {
+    text-decoration: none;
+    background: var(--light-grey);
+    border-style: solid;
+    border-color: var(--Darker-green);
+}
+
+.secondary-default a:hover {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-style: italic;
+}
+
+.secondary-default:active {
+  text-decoration: none;
+  background: var(--light-grey);
+  border: 4px solid var(--main-green);
+  margin-top: 0;
+}
+
+.secondary-default a:active {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--dark-color)
+}
+
+
+
+
+
+
+
+
+
+
+/******************************
+Code that only aplies to the 
+Secondary button disabled
+*******************************/
+
+.secondary-disabled {
+    text-decoration: none;
+    background: var(--light-grey);
+    border: 2px solid var(--main-green);
+    margin-top: 0;
+    opacity: 40%;
+    cursor: not-allowed;
+}
+
+.secondary-disabled a {
+    text-decoration: none;
+    color: var(--dark-color);
+    cursor: not-allowed;
+}
+
+.secondary-disabled:hover {
+  text-decoration: none;
+    background: var(--light-grey);
+    border: 2px solid var(--main-green);
+    margin-top: 0;
+    opacity: 40%;
+    cursor: not-allowed;
+} 
+
+.secondary-disabled a:hover {
+  text-decoration: none;
+  color: var(--dark-color);
+  cursor: not-allowed;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************
+General code for "Checkbox". Applies to all checkboxes.
+***************************************************/
+
+/******************************
+Code that only aplies to the 
+default checkbox.
+*******************************/
+
+.default-checkbox {
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+
+
+.default-checkbox input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: var(--white-color);
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid var(--main-green);
+    border-radius: 0.3em;
+    transform: translateY(-0.075em);
+  }
+
+  .default-checkbox + .default-checkbox{
+    margin-top: 1em;
+  }
+
+  .default-checkbox input[type="checkbox"] {
+    /* ...existing styles */
+  
+    display: grid;
+    place-content: center;
+  }
+
+  .default-checkbox input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--main-green);
+  }
+  
+  .default-checkbox input[type="checkbox"]:checked::before {
+    transform: scale(1.6);
+    border-radius: 0.1em;
+  }
+
+  .default-checkbox input[type="checkbox"]:focus {
+    outline: max(1px, 0.01em) solid var(--main-green);
+    outline-offset: max(1px, 0.01em);
+  }
+
+
+
+
+
+
+
+
+/******************************
+Code that only aplies to the 
+default checkbox.
+*******************************/
+
+  .disabled-checkbox {
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    color: var(--darker-grey);
+    cursor: not-allowed;
+}
+
+.disabled-checkbox + .disabled-checkbox{
+    margin-top: 1em;
+    
+  }
+
+.disabled-checkbox input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: var(--white-color);
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid var(--darker-grey);
+    border-radius: 0.3em;
+    transform: translateY(-0.075em);
+    cursor: not-allowed;
+  }
+
+  .disabled-checkbox input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--darker-grey);
+  }
+
+  .disabled-checkbox input[type="checkbox"] {
+    /* ...existing styles */
+  
+    display: grid;
+    place-content: center;
+  }
+
+  .disabled-checkbox input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--darker-grey);
+  }
+  
+  .disabled-checkbox input[type="checkbox"]:checked::before {
+    transform: scale(1.6);
+    border-radius: 0.1em;
+  }
+
+  .disabled-checkbox input[type="checkbox"]:focus {
+    outline: max(1px, 0.01em) solid var(--light-grey);
+    outline-offset: max(1px, 0.01em);
+  }
+
+  /* <!-- https://moderncss.dev/pure-css-custom-checkbox-style/ --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************
+General code for "Radio buttons". Applies to all radio buttons.
+********************************************************/
+
+ /******************************
+  Code that only aplies to the 
+  default radiobuttons.
+  *******************************/
+  
+  .default-radiobutton + .default-radiobutton {
+    margin-top: 1em;
+  }
+
+  .default-radiobutton {
+    line-height: 2.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.7em;
+  }
+
+.default-radiobutton input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--white-color);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+  }
+
+
+
+  .default-radiobutton input[type="radio"] {
+    appearance: none;
+    background-color: var(--white-color);
+    margin: 0.2em;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid var(--main-green);
+    border-radius: 50%;
+    transform: translateY(0.2em);
+
+    display: grid;
+    place-content: center;
+
+  }
+
+  .default-radiobutton input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--main-green);
+  }
+
+  .default-radiobutton  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  .default-radiobutton input[type="radio"]:focus {
+    outline: max(1px, 0.08em) solid var(--darker-grey);
+    outline-offset: max(2px, 0.15em);
+  }
+
+
+
+
+
+
+ 
+
+  /* https://moderncss.dev/pure-css-custom-styled-radio-buttons */
+
+
+
+/******************************
+Code that only aplies to the 
+disabled Radiobuttons.
+*******************************/
+
+.disabled-radiobutton + .disabled-radiobutton {
+  margin-top: 1em;
+}
+
+.disabled-radiobutton {
+  line-height: 2.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.7em;
+}
+
+.disabled-radiobutton input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--light-grey);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+}
+
+
+
+.disabled-radiobutton input[type="radio"] {
+  appearance: none;
+  background-color: var(--light-grey);
+  margin: 0.2em;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid var(--darker-grey);
+  border-radius: 50%;
+  transform: translateY(0.2em);
+  cursor: not-allowed;
+
+  display: grid;
+  place-content: center;
+
+}
+
+.disabled-radiobutton input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--light-grey);
+}
+
+.disabled-radiobutton input[type="radio"]:checked::before {
+  transform: scale(1);
+  cursor: not-allowed;
+}
+
+.disabled-radiobutton input[type="radio"]:focus {
+  outline: max(1px, 0.08em) solid var(--darker-grey);
+  outline-offset: max(2px, 0.15em);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************
+General code for "Toggle". Applies to all Toggles.
+***************************************************/
+
+.switch input {
+  display: none;
+}
+
+.switch {
+  display: inline-block;
+  width: 3.8em; 
+  height: 1.9em; 
+  margin: 4px;
+  transform:none;
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  box-shadow: 0 0 0 2px var(--main-green);
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-green);
+  border-radius: 3.2em;
+  transform: translateX(-30px);
+  transition: 0.3s;
+}
+
+input:checked + .slider:before
+{
+  transform: translateX(30px); 
+  background-color: var(--white-color);
+}
+
+input:checked + .slider
+{
+  background-color: var(--main-green);
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************
+General code for "Text area". Applies to all text area's.
+***************************************************/
+
+.default-textArea {
+  padding: 0.25em 0.5em;
+  background-color: var(--white-color);
+  border: 2px solid var(--main-green);
+  border-radius: 10px;
+  
+}
+
+.default-textArea:not(textarea) {
+  line-height: 1;
+  height: 6em;
+  width: 20em;
+}
+
+.default-textArea:focus {
+    outline: 3px solid var(--darker-grey);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /**************************************************
+General code for "progress bar". Applies to all progress bars.
+***************************************************/
+
+  .progressBar { 
+    height: 1em; 
+    position: relative;
+    background: var(--darker-grey);
+    border-radius: 1em;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    max-width: 70%;
+  }
+
+  .progressBar > span {
+    display: block;
+    height: 100%;
+    border-radius: 1em;
+    background-color: var(--main-green);
+    background-image: linear-gradient;
+  }
+  
+
